@@ -1,12 +1,49 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import configureStore from './store/configureStore';
+import { Provider } from 'react-redux';
+// import { PulseLoader } from 'react-spinners';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import AppRouter from './routers/AppRouter';
+
+import {startLoggedUser }from './actions/userActions';
+import {startLoadTests} from './actions/testActions';
+
+
+// import 'normalize.css/normalize.css';
+import './styles/styles.scss';
+
+import 'babel-polyfill';
+
+const store = configureStore();
+
+
+document.documentElement.setAttribute('data-browser', navigator.userAgent);
+
+
+const jsx = (
+    <Provider store={store}>
+        <AppRouter />
+    </Provider>
+);
+
+console.log('process.env je:',process.env)
+
+// ReactDOM.render(<p>LOADING</p>, document.getElementById('app'))
+
+
+//startLogedUser and startLoadTests have custom callbacks -> after successfull    
+
+store.dispatch(startLoggedUser(() => {
+    // store.dispatch(startLoadTests(() => {
+    ReactDOM.render(jsx, document.getElementById('app'));
+}));
+// }));
+
+
+
+
+
+
+//  ReactDOM.render(jsx, document.getElementById("app"));
