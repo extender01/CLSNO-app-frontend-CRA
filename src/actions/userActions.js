@@ -27,7 +27,7 @@ export const startLogin = (credentials) => {
        
         axios({
             method: 'post',
-            url: process.env.API_URL + '/login',
+            url: process.env.REACT_APP_API_URL + '/login',
             withCredentials: true,
             data: {
                 nick: credentials.nick,
@@ -65,7 +65,7 @@ export const startSignup = (credentials) => {
        
         axios({
             method: 'post',
-            url: process.env.API_URL + '/adduser',
+            url: process.env.REACT_APP_API_URL + '/adduser',
             withCredentials: true,
             data: {
                 nick: credentials.nick,
@@ -124,7 +124,7 @@ export const startLoggedUser = (callback) => {
         //checks if client has cookie with token, if yes then that user is returned as result of GET request, if not only string that says nobody is logged is returned
         axios({
             method: 'get',
-            url: process.env.API_URL + '/me',
+            url: process.env.REACT_APP_API_URL + '/me',
             withCredentials: true
         }).then((result) => {
             console.log('co posila api:', result.data);
@@ -171,7 +171,7 @@ export const startLogout = () => {
         
         axios({
             method: 'delete',
-            url: process.env.API_URL + '/logout',
+            url: process.env.REACT_APP_API_URL + '/logout',
             withCredentials: true
         })
             .then(() => {

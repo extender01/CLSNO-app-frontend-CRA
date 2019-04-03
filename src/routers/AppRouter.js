@@ -1,7 +1,7 @@
 import React from 'react';
 import {Router, Route, Switch } from 'react-router-dom';
 import {connect} from 'react-redux';
-import createHistory from 'history/createBrowserHistory';
+import {createBrowserHistory as createHistory} from 'history';
 
 
 import AdminRoute from './AdminRoute';

@@ -22,6 +22,8 @@ const store = configureStore();
 document.documentElement.setAttribute('data-browser', navigator.userAgent);
 
 
+//VYRESIT OBRAZKY A .ENV FILE NA ENVIRO PROMENNE A PRENOS COOKIES A NA ZAVER PRENEST NA HASHROUTER
+
 const jsx = (
     <Provider store={store}>
         <AppRouter />
@@ -29,6 +31,7 @@ const jsx = (
 );
 
 console.log('process.env je:',process.env)
+
 
 // ReactDOM.render(<p>LOADING</p>, document.getElementById('app'))
 
