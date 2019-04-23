@@ -3,9 +3,12 @@ import { connect } from 'react-redux';
 import Collapsible from 'react-collapsible';
 import PropTypes from 'prop-types';
 
+
 import {categoryFilter, statimFilter, erFilter, additionalFilter, clearFilters, groupFilter} from '../../actions/filterActions';
-import LabMetFilterTrigger from './LabMetFilterTrigger';
 import LabMetAlphabet from './LabMetAlphabet';
+import LabMetFilterTrigger from './LabMetFilterTrigger';
+
+
 
 const LabMetCategory = (props) => (
     <React.Fragment>
@@ -16,7 +19,9 @@ const LabMetCategory = (props) => (
             <button className={props.active === 'external' ? 'lm__cat-active' : undefined} name='external' onClick={(e) => {props.categoryFilter(e.target.name)}} >EXTERNÍ</button>
 
         </div>
-        <Collapsible trigger='Další filtry'>
+
+        <Collapsible trigger={<LabMetFilterTrigger heading='Další filtry' icon='arrow-circle-down' />} triggerWhenOpen={<LabMetFilterTrigger heading='Další filtry' icon='arrow-circle-down' rotation={180} />} >
+
             <Collapsible trigger={<LabMetFilterTrigger heading='PROVOZ' />} classParentString='lm__collapsible__filters'>
 
 

@@ -2,25 +2,28 @@
   "name": "clsno-app-frontend-cra",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://exty.cz/clsno",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "history": "^4.7.2",
     "node-sass": "4.5.3",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8",
     "react-burger-menu": "^2.5.4",
     "react-collapsible": "^2.5.0",
+    "react-dom": "^16.8.6",
     "react-media": "^1.8.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-router-hash-link": "^1.2.1",
+    "react-scripts": "2.1.8",
     "react-scroll": "^1.7.10",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0"
-
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.15.0",
@@ -34,7 +37,6 @@
     "redux-mock-store": "^1.5.3"
   },
   "scripts": {
-
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -14,7 +14,16 @@ import {startLoadTests} from './actions/testActions';
 // import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
+
+
+
 import 'babel-polyfill';
+
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope, faKey, faArrowCircleDown, faArrowCircleUp  } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faEnvelope, faKey, faArrowCircleDown, faArrowCircleUp);
 
 const store = configureStore();
 
@@ -22,7 +31,7 @@ const store = configureStore();
 document.documentElement.setAttribute('data-browser', navigator.userAgent);
 
 
-//VYRESIT OBRAZKY A .ENV FILE NA ENVIRO PROMENNE A PRENOS COOKIES A NA ZAVER PRENEST NA HASHROUTER
+//VYRESIT OBRAZKY DO PUBLIC,  PRENOS COOKIES A NA ZAVER PRENEST NA HASHROUTER
 
 const jsx = (
     <Provider store={store}>

@@ -1,5 +1,9 @@
 import React from 'react';
 
+import IMG_receptionIcon from '../../../../images/forDepartments/about/icons/request_icon2.svg';
+import IMG_receptionTimetable from '../../../../images/forDepartments/about/reception2.jpg';
+import IMG_stamp from '../../../../images/forDepartments/about/icons/stamp.svg';
+
 const Reception = () => (
     <div className='container__white'>
         <div className='reception'>
@@ -118,7 +122,7 @@ const Reception = () => (
                 <h3>Časový plán příjmu biochemie a hematologie na pavilonech U a C</h3>
 
                 <div className='reception__image'>
-                    <img src='./images/forDepartments/about/reception2.jpg' />
+                    <img src={IMG_receptionTimetable} alt='Časový plán příjmu biochemie a hematologie na pavilonech U a C' />
                 </div>
             
             </div>
@@ -128,7 +132,7 @@ const Reception = () => (
 
                 <div className='general__line-center'>
                     <div className='reception__icon'>
-                        <img src='./images/forDepartments/about/icons/request_icon2.svg' />
+                        <img src={IMG_receptionIcon} alt='V době pohotovosti biochemické a hematologické žádanky zvlášť' />
                     </div>
 
                     <p className='reception__textForIcon'>V době pohotovosti je potřeba psát biochemické a hematologické žádanky zvlášť</p>
@@ -136,7 +140,7 @@ const Reception = () => (
 
                 <div className='general__line-center'>
                     <div className='reception__icon'>
-                        <img src='./images/forDepartments/about/icons/stamp.svg' />
+                        <img src={IMG_stamp} alt='Na externích žádankách je potřeba razítko oddělení' />
                     </div>
 
                     <p className='reception__textForIcon'>Na žádankách na externí vyšetření musí být razítko oddělení včetně</p>

@@ -1,5 +1,8 @@
 import React from 'react';
 
+import IMG_pavilon from '../../images/landing/pavU.jpg';
+
+
 const Contact = () => (
     <div id='kontakt' className='container__blue'>
         <div className='general__heading'>     
@@ -171,8 +174,8 @@ const Contact = () => (
         </div>
 
         <div className='contact__address'>
-            <img  className='contact__image' src='/images/forDepartments/about/pavU.jpg' />
-            <iframe  frameBorder="0"
+            <img  className='contact__image' src={IMG_pavilon} alt='Centrální laboratoře' />
+            <iframe  title='mapa' frameBorder="0"
                 className='contact__map'
                 style={{border:0}}
                 src="https://www.google.com/maps/embed/v1/place?q=49.935305%2C%2017.877637&key=AIzaSyA38w_aSuQlVqIz5KHE6eMDGcCzI3Vg-kw" allowFullScreen>

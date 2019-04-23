@@ -1,5 +1,10 @@
 import React from 'react';
 
+import IMG_stop from '../../../../images/mistakes/stop.svg';
+import IMG_pipes from '../../../../images/mistakes/pipes.jpg';
+import IMG_discard from '../../../../images/mistakes/VAD_discard.jpg';
+import IMG_tubeConnection from '../../../../images/mistakes/tube_connection.jpg';
+
 const VADRecommendations = () => (
     <div className='container__blue'>
         <div className='VADRec'>
@@ -9,7 +14,7 @@ const VADRecommendations = () => (
             <div className='VADRec__item'>
                 <div className='VADRec__item__heading'>
                     <h4>ZASTAVIT INFUZI</h4>
-                    <img src='/images/mistakes/stop.svg' />
+                    <img src={IMG_stop} alt='Zastavit infuzi' />
                 </div>
                 <div className='VADRec__item__text'>
                     <p>Před odběrem krve je potřeba zastavit kapání infuze minimálně na 2 minuty</p>
@@ -21,7 +26,7 @@ const VADRecommendations = () => (
             <div className='VADRec__item'>
                 <div className='VADRec__item__heading'>
                     <h4>ČISTÉ TRUBKY</h4>
-                    <img src='/images/mistakes/pipes.jpg' />
+                    <img src={IMG_pipes} alt='Proplach hadiček' />
                 </div>
                 <div className='VADRec__item__text'>
                     <p>Doporučuje se proplach minimálně 10 ml fyziologického roztoku bez dalších aditiv (ne heparin nebo citrát - ty musí pryč)</p>
@@ -32,7 +37,7 @@ const VADRecommendations = () => (
             <div className='VADRec__item'>
                 <div className='VADRec__item__heading'>
                     <h4>ODSÁT A VYHODIT</h4>
-                    <img src='/images/forDepartments/draw/VAD_discard.jpg' />
+                    <img src={IMG_discard} alt='Odsát a vyhodit' />
                 </div>
                 <div className='VADRec__item__text'>
                     <p>První nasávaná krev se musí vyhodit, dokud není zcela vymytý fyziologický roztok z hadiček pryč.</p>
@@ -48,7 +53,7 @@ const VADRecommendations = () => (
             <div className='VADRec__item'>
                 <div className='VADRec__item__heading'>
                     <h4>PŘIPOJENÍ ZKUMAVKY</h4>
-                    <img src='/images/mistakes/tube_connection.jpg' />
+                    <img src={IMG_tubeConnection} alt='Připojení zkumavky' />
                 </div>
                 <div className='VADRec__item__text'>
                     <p>Vakuum ve zkumavce je vhodné pro standardní odběr přes jehlu. Při odběru přes katetr jsou však krvinky vystaveny větším třecím silám a existuje signifikantně vyšší riziko hemolýzy. Proto je doporučeno používat zkumavky s menším celkovým objemem, kde je podtlak menší a tím i menší riziko hemolýzy</p>

@@ -10,6 +10,9 @@ import Hamburger from './Hamburger';
 import {startLoadTests} from '../../actions/testActions';
 import bp from '../../helper/mediaQueryBreakPoint';
 
+import IMG_logo from '../../images/SNO_400W.png';
+import IMG_user from '../../images/user.png';
+
 
 
 
@@ -41,9 +44,9 @@ class MainHeader extends React.Component {
                     </Media> 
                     
                     <nav className='f_start-end-toggle header__logo'>
-                        <NavLink className='header__title' to='/' exact={true}>
-                            <img src={'/images/SNO_400W.png'} height='40px' />
-                        </NavLink>
+                        <HashLink className='header__title' to='/#home' exact={true}>
+                            <img src={IMG_logo} height='40px' alt='SNO logo' />
+                        </HashLink>
                     </nav>
                     
                     <div className ='f header__links'>
@@ -59,7 +62,7 @@ class MainHeader extends React.Component {
                         {this.props.isLogged ? (
                             <React.Fragment>
                                 <div className='f_column'>
-                                    <img src={'/images/user.png'} height='20px' />
+                                    <img src={IMG_user} height='20px' alt='logged user' />
                                     <p >{this.props.nick}</p>
                                 </div>
                                 <Link to='/login'>Odhlásit se</Link>

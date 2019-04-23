@@ -1,7 +1,7 @@
 import React from 'react';
 import {Router, Route, Switch } from 'react-router-dom';
 import {connect} from 'react-redux';
-import {createBrowserHistory as createHistory} from 'history';
+import {createHashHistory as createHistory} from 'history';
 
 
 import AdminRoute from './AdminRoute';
@@ -116,7 +116,7 @@ const AppRouter = (props) => (
                 }
             </div>
 
-        </ScrollToTop>
+        </ScrollToTop> 
     </Router>
 );
 

@@ -141,36 +141,41 @@
         display: block;
 
         &__heading {
-            display: inline-block;
-            width: 90%;
+            display: flex;
+            justify-content: center;
+            // margin: 0 auto;
+            // width: 90%;
+            & svg {
+                padding: 0 1rem;
+            }
         }
 
         &__trigger:hover {
             cursor: pointer;
         }
-        &__trigger {
-            // background: green;
+        // &__trigger {
+        //     // background: green;
             
-            &:after {
-                font-family: 'Font Awesome 5 Free';
-                content: '\f053';
-                margin-left: 1rem;
+        //     &:after {
+        //         font-family: 'Font Awesome 5 Free';
+        //         content: '\f053';
+        //         margin-left: 1rem;
                 
-                // position: absolute;
-                // right: 10px;
-                // top: 10px;
-                display: inline-block;
-                transform: rotateZ(270deg);
-                transition: transform 300ms;
-              }
+        //         // position: absolute;
+        //         // right: 10px;
+        //         // top: 10px;
+        //         display: inline-block;
+        //         transform: rotateZ(270deg);
+        //         transition: transform 300ms;
+        //       }
             
-            &.is-open {
-                // background: red;
-                &:after {
-                transform: rotateZ(90deg);
-            }
-              }
-        }    
+        //     &.is-open {
+        //         // background: red;
+        //         &:after {
+        //         transform: rotateZ(90deg);
+        //     }
+        //       }
+        // }    
 
         
             

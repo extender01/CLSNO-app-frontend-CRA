@@ -5,7 +5,7 @@ const DrawMistakesWhat = (props) => (
     
     <div className='draw__mistakes__what'>
         <h2>Proč je to problém?</h2>
-        <img src={props.item.whatImg} />
+        <img src={props.item.whatImg} alt={props.item.whatText} />
         <p>{props.item.whatText}</p>
 
         

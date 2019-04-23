@@ -8,7 +8,7 @@ const GeneralCard = (props) => (
     <div className='general__card'>
         <Link to={props.cardLink}>
         
-            <img src={props.cardImg} />
+            <img src={props.cardImg} alt={props.cardHead} />
             <h2>{props.cardHead}</h2>
             <p>{props.cardText}</p>
         </Link>

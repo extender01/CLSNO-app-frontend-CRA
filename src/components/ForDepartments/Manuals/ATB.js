@@ -1,5 +1,11 @@
 import React from 'react';
 
+import IMG_atb1 from '../../../images/forDepartments/manuals/atb1.jpg';
+import IMG_atb2 from '../../../images/forDepartments/manuals/atb2.jpg';
+import IMG_atb3 from '../../../images/forDepartments/manuals/atb3.jpg';
+import IMG_atb4 from '../../../images/forDepartments/manuals/atb4.jpg';
+
+
 const ATB = () => (
     <div className='container__blue'>
         <div className='atb'>
@@ -37,20 +43,20 @@ const ATB = () => (
                     <div className='atb__request__item'>
                         <p>V nové laboratorní žádance vyberte kategorii CL BIO - TDM antibiotik</p>
                         <p>Zaškrtněte požadované antibiotikum a klikněte OK</p>
-                        <img src='/images/forDepartments/manuals/atb1.jpg' alt='Gentamicin Vankomycin' />
+                        <img src={IMG_atb1} alt='Gentamicin Vankomycin' />
                     </div>
 
                     <div className='atb__request__item'>
                         <p>Klikněte na metodu &#34;dopiš údaje pro TDM&#34; a do políčka &#34;Předat hodnotu&#34; napište 1. </p>
                         <p>Do okna pod tímto políčkem napište tdm a pak zmáčkněte SOUČASNĚ Ctrl + mezerník</p>
-                        <img src='/images/forDepartments/manuals/atb2.jpg' alt='Gentamicin Vankomycin' />
+                        <img src={IMG_atb2} alt='Gentamicin Vankomycin' />
 
                     </div>
 
 
                     <div className='atb__request__item'>
                         <p>V okně se vám objeví předvyplněný text, kam dopíšete údaje, nutné k vyhodnocení</p>
-                        <img src='/images/forDepartments/manuals/atb3.jpg' alt='Gentamicin Vankomycin' />
+                        <img src={IMG_atb3} alt='Gentamicin Vankomycin' />
 
                     </div>
 
@@ -59,7 +65,7 @@ const ATB = () => (
                         <p>Žádanku s materiálem odešlete standardní cestou na příjem CL.</p>
                         <p>Laboratoř po změření telefonicky nahlásí naměřené sérové hladiny ATB a kreatininu klinickému farmaceutovi do lékárny SNO (PharmDr. Fialová nebo PharmDr. Zajícová). Tam vyhledají i ostatní zadané údaje a vyhodnotí TDM. Výsledek z laboratoře přichází na oddělení obvyklým způsobem.</p>
                         <p>Po vyhodnocení klinickým farmaceutem bude výsledek odeslán do Akordu. Kde jej najdete pod ikonou (tabletka R) nebo pod otazníkem jako hodnocení klinického farmaceuta.</p>
-                        <img src='/images/forDepartments/manuals/atb4.jpg' alt='Gentamicin Vankomycin' />
+                        <img src={IMG_atb4} alt='Gentamicin Vankomycin' />
 
                     </div>
 

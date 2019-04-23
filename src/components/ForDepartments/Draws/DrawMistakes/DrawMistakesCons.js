@@ -13,7 +13,7 @@ const DrawMistakesCons = (props) => (
                     {arrItem.conTable.map((inf) => (
                         
                         inf.analytes.map((analyte, ind) => (
-                            <div className='draw__mistakes__cons__table__item' key={ind}><img src={inf.value} /><p>{analyte}</p></div>
+                            <div className='draw__mistakes__cons__table__item' key={ind}><img src={inf.value} alt='cons' /><p>{analyte}</p></div>
                         ))
                         
                     ))}

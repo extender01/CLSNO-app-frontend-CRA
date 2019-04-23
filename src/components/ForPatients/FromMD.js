@@ -1,6 +1,8 @@
 import React from 'react';
 import Instructions from './Instructions';
 
+import IMG_md from '../../images/forPatients/md.jpg';
+
 const FromMD = () => (
     <React.Fragment>
         <div className='container__blue'>
@@ -8,7 +10,7 @@ const FromMD = () => (
                 <h1>Odběr krve s žádankou od lékaře</h1>
                 <div className='fromMD__item'>
                     <div className='fromMD__item__map'>
-                        <img src='/images/forPatients/md.jpg' />
+                        <img src={IMG_md} alt='Odběr krve s žádankou od lékaře' />
                     </div>
                     <div className='fromMD__item__text'>
                         <h2>Odběry</h2>

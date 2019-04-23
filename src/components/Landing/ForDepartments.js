@@ -1,6 +1,11 @@
 import React from 'react';
 import GeneralCard from '../General/GeneralCard';
 
+import IMG_draws from '../../images/forDepartments/about/draw_256.png';
+import IMG_methodsList from '../../images/forDepartments/about/methods3_256.png';
+import IMG_organization from '../../images/landing/organization_256.png';
+import IMG_guides from '../../images/landing/help.svg';
+
 
 const ForDepartments = () => (
     <div className='container__blue'>
@@ -12,21 +17,21 @@ const ForDepartments = () => (
                 cardHead='ODBĚRY'
                 cardText='Informace ke odběrům, žádankám a vzorkům'
                 cardLink='/odbery'
-                cardImg='/images/forDepartments/about/draw_256.png'
+                cardImg={IMG_draws}
             />
 
             <GeneralCard
                 cardHead='SEZNAM METOD'
                 cardText='Seznam metod prováděných v SNO a odesílaných do smluvních laboratoří.'
                 cardLink='/metody'
-                cardImg='/images/forDepartments/about/methods3_256.png'
+                cardImg={IMG_methodsList}
             />
 
             <GeneralCard
                 cardHead='ORGANIZACE PROVOZU'
                 cardText='Kdy a jak laboratoř přijímá vzorky k analýze.'
                 cardLink='/organizace'
-                cardImg='/images/forDepartments/about/organization_256.png'
+                cardImg={IMG_organization}
             
             />
 
@@ -34,7 +39,7 @@ const ForDepartments = () => (
                 cardHead='NÁVODY A POSTUPY'
                 cardText='Návody týkající se laboratorních žádanek'
                 cardLink='/navody'
-                cardImg='/images/forDepartments/about/icons/help.svg'
+                cardImg={IMG_guides}
             
             />
 

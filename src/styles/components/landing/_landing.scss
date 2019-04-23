@@ -93,7 +93,7 @@
 
 
 .container__departments {
-    @include bgimg(url('/images/landing/about2.jpg'));
+    @include bgimg(url('../images/landing/about2.jpg'));
     
 
 }

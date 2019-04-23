@@ -42,8 +42,8 @@ const LabMetItem = (props) => (
 
 
         </div>
-
-        <div className={(props.textFilter && props.syn.toLowerCase().includes(props.textFilter.toLowerCase())) ? 'lm__item--found' : undefined}>
+            {/* props.syn && checks if there is synonyme, then it checks if searched keyword is included in synonyme */}
+        <div className={(props.syn && (props.textFilter && props.syn.toLowerCase().includes(props.textFilter.toLowerCase())) ? 'lm__item--found' : undefined)}>
             <p>{props.syn}</p>
         </div>
 

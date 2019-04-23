@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 
 import {textFilter, searchAll, clearFilters, erFilter, statimFilter, additionalFilter} from '../../actions/filterActions';
 
+import IMG_cross from '../../images/cross.png';
+import IMG_search from '../../images/search.png';
 
 
 
@@ -51,12 +53,14 @@ class LabMetSearch extends React.Component {
                         onChange={this.textFilter}>
                     </input>                   
                     
+                    {!this.props.text && 
                     <img 
                         className='lm__search_img'
                         onClick={this.clearSearch} 
-                        src={this.props.text ? '/images/cross.png' : '/images/search.png'}
+                        src={IMG_search}
                         height="40px" 
-                    />
+                        alt ='hledej metodu'
+                    />}
 
                 </div>
 

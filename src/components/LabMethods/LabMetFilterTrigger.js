@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // import PropTypes from 'prop-types';
 
@@ -6,6 +7,8 @@ import React from 'react';
 const LabMetFilterTrigger = (props) => (
     <div className='lm__collapsible__filters__heading'>
         <p>{props.heading}</p>
+        <FontAwesomeIcon icon={props.icon} rotation={props.rotation}   />
+
     </div>
 );
 

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import IMG_ogtt from '../../images/forPatients/ogtt.jpg';
 
 const OGTT = () => (
     <React.Fragment>
@@ -8,7 +9,7 @@ const OGTT = () => (
                 <h1>Orálně glukózový toleranční test (OGTT), &quot;test na cukrovku&quot;</h1>
                 <div className='ogtt__item'>
                     <div className='ogtt__item__map'>
-                        <img src='/images/forPatients/ogtt.jpg' />
+                        <img src={IMG_ogtt} alt='Orálně glukózový toleranční test (OGTT)' />
                     </div>
 
                     <div className='ogtt__item__text'>

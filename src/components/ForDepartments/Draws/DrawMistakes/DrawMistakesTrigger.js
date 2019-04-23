@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const DrawMistakesTrigger = ({box: {heading, image, text}}) => (
     <div className='draw__mistakes__header'>
         
-        <img src={image} />
+        <img src={image} alt='heading' />
         <div className='draw__mistakes__header__description'>
             <h2>{heading}</h2>
             <p>{text}</p>

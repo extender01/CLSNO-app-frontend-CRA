@@ -1,6 +1,8 @@
 import React from 'react';
 import GeneralCard from '../../General/GeneralCard';
 
+import IMG_modes from '../../../images/organization/modes.svg';
+
 const Organization = () => (
     <div className='container__blue'>
         <div className='organization'>
@@ -8,7 +10,7 @@ const Organization = () => (
                 cardHead='REŽIMY VYŠETŘENÍ' 
                 cardText='RUTINA, POHOTOVOST, STATIM a DOHLÁŠKY' 
                 cardLink='/rezimy' 
-                cardImg='/images/organization/modes.svg' 
+                cardImg={IMG_modes}
             />
 
             <GeneralCard

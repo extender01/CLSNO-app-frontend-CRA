@@ -1,6 +1,7 @@
 import React from 'react';
 import Instructions from './Instructions';
 
+import IMG_spl from '../../images/forPatients/spl.jpg';
 
 const FromSPL = () => (
     <React.Fragment>
@@ -9,7 +10,7 @@ const FromSPL = () => (
                 <h1>Odběr krve a vyšetření jako samoplátce bez žádanky od lékaře</h1>
                 <div className='fromSPL__item'>
                     <div className='fromSPL__item__map'>
-                        <img src='/images/forPatients/spl.jpg' />
+                        <img src={IMG_spl} alt='Odběr krve a vyšetření jako samoplátce bez žádanky od lékaře' />
                     </div>
                     <div className='fromSPL__item__text'>
                         <h2>Samoplátce</h2>
