@@ -64,7 +64,7 @@ const AppRouter = (props) => (
     <Router history={history}>
         <ScrollToTop>
             <MainHeader />
-            {props.rights === 'admin' && <AdminHeader />}
+            {/*props.rights === 'admin' && <AdminHeader />*/}
 
             <div className='container'>
                 {(!!props.user && !!props.labmets) &&

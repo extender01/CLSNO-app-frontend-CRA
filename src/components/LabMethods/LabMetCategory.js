@@ -20,7 +20,7 @@ const LabMetCategory = (props) => (
 
         </div>
 
-        <Collapsible trigger={<LabMetFilterTrigger heading='Další filtry' icon='arrow-circle-down' />} triggerWhenOpen={<LabMetFilterTrigger heading='Další filtry' icon='arrow-circle-down' rotation={180} />} >
+        <Collapsible classParentString='lm__collapsible__filters' trigger={<LabMetFilterTrigger heading='Další filtry' icon='arrow-circle-down' />} triggerWhenOpen={<LabMetFilterTrigger heading='Další filtry' icon='arrow-circle-down' rotation={180} />} >
 
             <Collapsible trigger={<LabMetFilterTrigger heading='PROVOZ' />} classParentString='lm__collapsible__filters'>
 

@@ -33,7 +33,8 @@ export const startAddTest = (test) => {
         //this return is for jest testing in testActions.test.js - this returns original promise, which can be chained with .then where expect()... assertions are put
         return axios({
             method: 'post',
-            url: process.env.REACT_APP_API_URL + '/api/addtest',
+            url: process.env.REACT_APP_API_URL + '/addtest',
+            withCredentials: true,
             data: test
         }).then((result) => {
             // console.log('res z axios', result);
@@ -75,6 +76,7 @@ export const startEditTest = (id, updates) => {
         axios({
             method: 'patch',
             url: process.env.REACT_APP_API_URL + '/tests/' + id,
+            withCredentials: true,
             data: updates
         }).then((result) => {
             console.log('incoming updates', updates);
@@ -108,6 +110,7 @@ export const startDeleteTest = (id) => {
         axios({
             method: 'delete',
             url: process.env.REACT_APP_API_URL + '/tests/' + id,
+            withCredentials: true
         }).then((result) => {
             console.log('byla smazana metoda:', result.data.name);
             dispatch(deletTestSuccess(id));

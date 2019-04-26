@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 //nested destructuring
 const DrawMistakesTrigger = ({box: {heading, image, text}}) => (
     <div className='draw__mistakes__header'>
-        
+        {console.log(`../../../../${image}`)}
         <img src={image} alt='heading' />
         <div className='draw__mistakes__header__description'>
             <h2>{heading}</h2>
@@ -23,3 +23,5 @@ DrawMistakesTrigger.propTypes = {
 };
 
 export default DrawMistakesTrigger;  
+
+// require(`../../../../${image}`)
