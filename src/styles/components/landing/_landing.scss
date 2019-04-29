@@ -112,7 +112,7 @@
         text-align: center;
         padding: 1rem;
         font-weight: 100;
-        font-family: 'Raleway';
+        // font-family: 'Raleway';
 
     }
 
@@ -131,7 +131,7 @@
         margin: 10rem 0;
 
         & p {
-            font-family: 'Raleway';
+            // font-family: 'Raleway';
             color: white;
         }
 
@@ -231,7 +231,9 @@
 
 .contact__address {
     @include frs();
+    justify-content: center;
     padding: 1rem;
+    // max-width: 120rem;
 }
 
 .contact__map {
@@ -239,8 +241,8 @@
     height: 34.2rem;
     max-width: 50rem;
     max-height: 33.2rem;
-    flex-grow: 1;
-    flex-basis: 30rem;
+    // flex-grow: 1;
+    // flex-basis: 30rem;
     // margin: 1rem;
     border: 1px white solid;
 
@@ -248,8 +250,8 @@
 }
 
 .contact__image {
-    flex-grow: 1;
-    flex-basis: 10rem;
+    // flex-grow: 1;
+    // flex-basis: 20rem;
     margin: 0 1rem 1rem 1rem;
     border: 1px white solid;
     width: 100%;

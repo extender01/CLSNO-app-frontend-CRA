@@ -1,24 +1,5 @@
 .general {
-    // &__container {
-    //     padding-top: 6.4rem;
-    //     // background: $bg-blue;
-    //     color: $p-grey;
-    //     margin: 0;
-        
-    //     display: flex;
-    //     flex-flow: row wrap;
-    //     justify-content: space-around;
-    //     align-items: stretch;
-    
-    //     @supports  (justify-content: space-evenly) {
-    //         justify-content: space-evenly;
-    //     }
-
-    //     font-family: 'Open Sans';
-
-        
-    
-    // }
+ 
 
     &__line {
         @include frs();

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import {textFilter, searchAll, clearFilters, erFilter, statimFilter, additionalFilter} from '../../actions/filterActions';
 
-import IMG_cross from '../../images/cross.png';
+import IMG_cross from '../../images/cross.svg';
 import IMG_search from '../../images/search.png';
 
 

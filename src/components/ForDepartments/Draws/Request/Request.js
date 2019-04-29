@@ -1,6 +1,7 @@
 import React from 'react';
 import RequestItem from './RequestItem';
 import data from '../../../../data/request/request.json';
+import IMG_error from '../../../../images/cross.svg'
 
 const Request = () => (
     <div className='container__blue'>
@@ -13,7 +14,7 @@ const Request = () => (
                 <RequestItem info={data.request[0]} image='checked.png' />
                 <RequestItem info={data.request[1]} image='checked.png' />
                 <RequestItem info={data.request[2]} image='checked.png' />
-                <RequestItem info={data.request[3]} image='error.png' />
+                <RequestItem info={data.request[3]} image={IMG_error} />
             </div>
         </div>
     </div>

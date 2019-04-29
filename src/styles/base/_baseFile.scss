@@ -5,22 +5,31 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: $m-size;
   margin: 0;
   padding: 0;
   background: $bg-blue;
-  // background-image: url('/images/ET3.jpg');
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-attachment: fixed;
-  //background-image: radial-gradient(#3CCDC9, #378BBD);
-  // color: white;
+
+}
+
+//FIX IE11 FIXED BACKGROUND IMAGE WIGGLE
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+{
+    html{
+        overflow: hidden;
+        height: 100%;    
+    }
+    body{
+        overflow: auto;
+        height: 100%;
+    }
 }
 
 #app {
   // max-width: 1200px;
   min-width:300px;
+  width: 100%;
   // margin: 0 auto;
   
 }
@@ -31,7 +40,7 @@ body {
 
 p {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  // font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -43,12 +52,12 @@ a {
 h1 {
   margin: 1rem 0;
   padding: 0 2rem;
-  font-family: 'Open Sans';
+  // font-family: 'Open Sans';
   font-weight: 100;
 }
 
 h2 {
-  font-family: 'Open Sans';
+  // font-family: 'Open Sans';
   font-weight: 100;
   padding: 0 2rem;
 }

@@ -3,7 +3,7 @@
     margin: 0 4px 8px 4px;
     text-align: center; 
     color: white;
-    background: rgba(86, 29, 29, 0.22);
+    background: rgb(25, 101, 142)
    
 }
 
@@ -25,34 +25,9 @@
 
 
 
-// .colorName {
-//     background: $colorName;
-//     // color: $grey
-// }
-
-// .colorSyn {
-//     background: $colorName;
-//     // color: $grey
-// }
-
-// .colorNameAk {
-//     background: $colorName;
-//     // color: $grey
-// }
-
-// .colorGroupAk {
-//     background: $colorName;
-//     // color: $grey
-// }
-
-// .colorWhere {
-//     background: $colorWhere;
-//     color: $grey;
-// }
 
 .colorWhenTransport {
-    // background: $colorWhenTransport;
-    // color: $grey;
+   
 
     & > table {
         margin: 0 auto;
@@ -61,20 +36,7 @@
     
 }
 
-// .colorDraw {
-//     background: $colorDraw;
-//     color: $grey;
-// }
 
-// .colorPreanal {
-//     background: $colorPreanal;
-//     color: $grey;
-// }
-
-// .colorNote {
-//     background: $colorNote;
-//     color: $grey; 
-// }
 
 .colorCustomNote {
     background: $colorCustomNote;
@@ -82,9 +44,7 @@
 
 }
 
-// .colorUnit {
-//     background: $colorUnit;
-// }
+
 
 .colorRefRange {
     // background: $colorRefRange;
@@ -101,10 +61,9 @@
     }
 }
 
-.colorRunTime {
+.runTime {
 
-    // background: $colorDraw;
-    // color: $grey;
+   
 
     &--no {
         background: $colorRunTimeNo;

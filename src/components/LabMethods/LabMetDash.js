@@ -7,15 +7,10 @@ import LabMetSearch from './LabMetSearch';
 import {startLoadTests} from '../../actions/testActions';
 
 
-
+//VYRESIT NENACTENI DETAILU PRI REFRESHI
 
 class LabMetDash extends React.Component {
-    constructor(props) {
-        super(props);
-        
-        
-
-    }
+   
 
     componentDidMount() {
         // this.props.loadTests();
