@@ -93,7 +93,7 @@ export const startSignup = (credentials) => {
 
 //checks in db who is owner of x-auth cookie and sends back nick and id info (and stores them to redux)
 const loggedUserBegin = () => ({type: 'LOGGED_USER_BEGIN'});
-const loggedUserFailure = (error = null) => ({type: 'LOGGED_USER_FAILURE', error: error});
+// const loggedUserFailure = (error = null) => ({type: 'LOGGED_USER_FAILURE', error: error});
 
 export const loggedUserSuccess = (APIres = {user: {_id: '', nick: 'nobody', rights: 'department'}}) => {
     if (APIres) {
@@ -111,6 +111,8 @@ export const loggedUserSuccess = (APIres = {user: {_id: '', nick: 'nobody', righ
         };
     } 
 };
+
+
 
 
 

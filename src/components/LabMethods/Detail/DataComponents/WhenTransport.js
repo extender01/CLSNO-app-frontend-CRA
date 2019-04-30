@@ -55,6 +55,7 @@ class WhenTransport extends React.Component {
                         </table>
                     
                 );
+            default: return undefined;
          };
     };
    

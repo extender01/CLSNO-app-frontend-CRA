@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 
-import {textFilter, searchAll, clearFilters, erFilter, statimFilter, additionalFilter} from '../../actions/filterActions';
+import {textFilter, clearFilters, erFilter, statimFilter, additionalFilter} from '../../actions/filterActions';
 
 import IMG_cross from '../../images/cross.svg';
 import IMG_search from '../../images/search.png';
@@ -66,7 +66,7 @@ class LabMetSearch extends React.Component {
 
 
                 <div className={this.noFilters() ? 'lm__search--invisible ' : undefined}>
-                   <p className='lm__search_clearFilter' onClick={this.clearFilters}><img src={IMG_cross} height='12px' />ZRUŠIT FILTRY</p> 
+                   <p className='lm__search_clearFilter' onClick={this.clearFilters}><img src={IMG_cross} height='12px' alt='zrušit filtry' />ZRUŠIT FILTRY</p> 
                 </div>
                 
             </div>
