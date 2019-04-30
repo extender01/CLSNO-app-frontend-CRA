@@ -8,7 +8,7 @@ const DrawMistakesHow = (props) => (
         {props.item.how && props.item.how.map((arrItem, index) => (
             <div key={index} className='draw__mistakes__how__item'>
                 {arrItem.howImg ? <div className='draw__mistakes__how__img' >
-                    <img src={arrItem.howImg} />
+                    <img src={arrItem.howImg} alt={arrItem.howHeading} />
                 </div> : undefined }
                 <div className='draw__mistakes__how__text'>
                     <h4>{arrItem.howHeading}</h4>

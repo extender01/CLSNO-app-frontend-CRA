@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { history } from '../routers/AppRouter';
+
 
 
 export default class CredentialsForm extends React.Component {

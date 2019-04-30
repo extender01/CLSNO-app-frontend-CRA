@@ -8,9 +8,9 @@ const GenericIcon = (props) => (
         <h4>{props.label}</h4>
         {/* isAvailable is boolean or string (if empty string then value is falsy*/}
         {props.isAvailable ?
-            <img src={IMG_checked} height='20px' /> 
+            <img src={IMG_checked} height='20px' alt='dostupnost' /> 
             :
-            <img src={IMG_error} height='20px' />
+            <img src={IMG_error} height='20px' alt='dostupnost' />
 
         }
         {props.label === 'RUTINA' ? <p>5h</p> : <p>{props.value}</p>}

@@ -28,7 +28,7 @@ export default class Draw extends React.Component {
             return (
                 drawTypesToArray.map((item, index) => {
                     if(item.startsWith('custom:')) {
-                        const customDraw = 'je tam vlastni odber'
+                        
                         return (
                             <p key={index}>{item.substring(7)}</p>
                         )
@@ -37,7 +37,7 @@ export default class Draw extends React.Component {
                             <div key={index} className="draw__type" >
                                 {this.drawTypes[item] &&
                                     <React.Fragment>
-                                        <img src={`/images/forDepartments/drawsystem/${item}.png`} title={this.drawTypes[item]} height='60px' />
+                                        <img src={`/images/forDepartments/drawsystem/${item}.png`} title={this.drawTypes[item]} alt={this.drawTypes[item]} height='60px' />
                                         
                                         <Media query={`(min-width: ${bp})`}>
                                             {(matches) => 

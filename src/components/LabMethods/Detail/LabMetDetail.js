@@ -7,7 +7,7 @@ import LabMetGeneric from './LabMetGeneric';
 import LabMetExternal from './LabMetExternal';
 import LabMetCalculated from './LabMetCalculated';
 
-const LabMetDetail = ({lm, rights, location}) => (
+const LabMetDetail = ({lm, rights, match}) => (
 
     //until props are loaded from redux, do not render any test details
     <div className='ld'>
@@ -15,14 +15,14 @@ const LabMetDetail = ({lm, rights, location}) => (
             <React.Fragment>
                 <LabMetGeneric lm={lm} rights={rights} />                       
                 
-                {location.state === 'external' && (
+                {match.params.intextcalc === 'externi' && (
                     <LabMetExternal lm={lm} rights={rights} />
                 )}
-                {location.state === 'internal' && (
+                {match.params.intextcalc === 'interni' && (
 
                     <LabMetInternal lm={lm} />
                 )}
-                {location.state === 'calculated' && (
+                {match.params.intextcalc === 'vypoctove' && (
 
                     <LabMetCalculated lm={lm} />
                 )}
@@ -39,6 +39,7 @@ const findParticular = (state, props) => {
         if (item._id) {
             return item._id === props.match.params.id;
         } 
+        return false
     });
 };
 

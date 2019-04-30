@@ -7,7 +7,7 @@ import {createHashHistory as createHistory} from 'history';
 import AdminRoute from './AdminRoute';
 
 import MainHeader from '../components/Headers/MainHeader';
-import AdminHeader from '../components/Headers/AdminHeader';
+// import AdminHeader from '../components/Headers/AdminHeader';
 
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
 
@@ -72,7 +72,7 @@ const AppRouter = (props) => (
                     <Route path='/' component={Landing} exact={true}/>
 
                     <Route path='/metody' component={LabMetDash} exact={true} />
-                    <Route path="/metody/detail/:id" component={LabMetDetail} />
+                    <Route path="/metody/:intextcalc/detail/:id" component={LabMetDetail} />
                     <Route path='/customNote/:id' component={CustomNoteForm} />
                     
                     <Route path='/odbery' component={DrawDash} />

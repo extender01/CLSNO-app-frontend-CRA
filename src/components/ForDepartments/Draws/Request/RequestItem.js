@@ -8,7 +8,7 @@ const RequestItem = (props) => (
         
         {props.info.text.map((item, index) => (
             <div className='request__item__text' key={index}>
-                {props.image && <img src={`/images/${props.image}`} alt='žádanka musí obsahovat' />}
+                {props.image && <img src={props.image} height='20px' alt='žádanka musí obsahovat' />}
                 <p>{item}</p>
             </div>
         ))}

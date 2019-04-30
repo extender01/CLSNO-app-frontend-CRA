@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
 
+import IMG_edit from '../../../../images/edit.svg';
+
 // default fallback object (empty object) must be set when props are destructured: {name, age} = {}, setting default values is not enough...
 //..beacuse destructured parameters are always required. Here when department has no custom note, then error would be thrown
 
@@ -19,7 +21,7 @@ const CustomNote = ({customNote: {customNote = null} = {}, user, ...otherProps }
                 pathname: '/customNote/' + otherProps._id,
                 jmeno: otherProps.label
             }}>
-                <img className='customNote__link' src={'/images/pencil-edit-button.png'} />
+                <img className='customNote__link' src={IMG_edit} alt='poznámka oddělení' />
             </Link>}
         </div>
         

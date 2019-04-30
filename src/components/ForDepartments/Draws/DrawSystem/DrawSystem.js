@@ -18,7 +18,7 @@ import IMG_csf from '../../../../images/forDepartments/drawsystem/image039.jpg';
 import IMG_fob from '../../../../images/forDepartments/drawsystem/image041.jpg';
 
 
-const imgPath = '../../../../images/forDepartments/drawsystem/'
+
 
 const DrawSystem = () => (
     <div  className='container__white'>

@@ -12,8 +12,8 @@ const LabMetItem = (props) => (
 
             {props.category === 'external' && (
                 <Link to={{
-                    pathname: '/metody/detail/' + props._id,
-                    state: 'external' 
+                    pathname: '/metody/externi/detail/' + props._id
+                    
                 }}>
                     {props.name}
                 </Link>
@@ -22,8 +22,8 @@ const LabMetItem = (props) => (
 
             {props.category === 'internal' && (
                 <Link to={{
-                    pathname: '/metody/detail/' + props._id,
-                    state: 'internal' 
+                    pathname: '/metody/interni/detail/' + props._id
+                    
                 }}>
                     {props.name}
                 </Link>
@@ -32,8 +32,8 @@ const LabMetItem = (props) => (
 
             {props.category === 'calculated' && (
                 <Link to={{
-                    pathname: '/metody/detail/' + props._id,
-                    state: 'calculated' 
+                    pathname: '/metody/vypoctove/detail/' + props._id
+                    
                 }}>
                     {props.name}
                 </Link>

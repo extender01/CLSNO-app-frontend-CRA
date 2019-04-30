@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -44,7 +44,7 @@ class MainHeader extends React.Component {
                     </Media> 
                     
                     <nav className='f_start-end-toggle header__logo'>
-                        <HashLink className='header__title' to='/#home' exact={true}>
+                        <HashLink className='header__title' to='/#home' exact='true'>
                             <img src={IMG_logo} height='40px' alt='SNO logo' />
                         </HashLink>
                     </nav>

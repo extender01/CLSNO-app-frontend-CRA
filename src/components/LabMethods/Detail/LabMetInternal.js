@@ -8,10 +8,7 @@ import RefRange from './DataComponents/RefRange';
 
 
 export default class LabMetInternal extends React.Component {
-    constructor(props) {
-        super(props);
-        
-    }
+
 
 
     responseNote = {

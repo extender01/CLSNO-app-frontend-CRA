@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import AppRouter from './routers/AppRouter';
 
 import {startLoggedUser }from './actions/userActions';
-import {startLoadTests} from './actions/testActions';
+// import {startLoadTests} from './actions/testActions';
 
 
 // import 'normalize.css/normalize.css';
@@ -31,7 +31,7 @@ const store = configureStore();
 document.documentElement.setAttribute('data-browser', navigator.userAgent);
 
 
-//VYRESIT OBRAZKY DO PUBLIC,  PRENOS COOKIES A NA ZAVER PRENEST NA HASHROUTER
+
 
 const jsx = (
     <Provider store={store}>

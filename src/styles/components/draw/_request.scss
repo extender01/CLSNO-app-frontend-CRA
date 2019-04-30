@@ -19,7 +19,7 @@
         flex-grow: 1;
         flex-basis: 33rem;
         &__text {
-            @include frc(flex-start, center, nowrap);
+            @include frc(flex-start, start, nowrap);
             max-width: 90rem;
             margin: 2rem auto;
             line-height: 3rem;
