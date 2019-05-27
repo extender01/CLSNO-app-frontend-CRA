@@ -5,7 +5,7 @@ import Generic from './DataComponents/Generic';
 import Where from './DataComponents/Where';
 import WhenTransport from './DataComponents/WhenTransport';
 import Draw from './DataComponents/Draw';
-import CustomNote from './DataComponents/CustomNote';
+// import CustomNote from './DataComponents/CustomNote'; WILL BE ADDED IN FUTURE RELEASE
 
 const LabMetGeneric = ({lm, rights}) => (
     <React.Fragment>
@@ -34,9 +34,9 @@ const LabMetGeneric = ({lm, rights}) => (
                 <Generic label='PREANALYTICKÁ FÁZE' value={lm.preanal ? lm.preanal : 'Standardní podmínky preanalytické fáze'} classNames='g1 colorPreanal' />
             
                 {lm.note && <Generic label='OBECNÁ POZNÁMKA' value={lm.note}  classNames='g1 colorNote'/>}
-                {rights === 'department' && 
+                {/*rights === 'department' && 
                     <CustomNote label='VAŠE POZNÁMKA' _id={lm._id} customNote={lm.customNotes[0] !== undefined ? lm.customNotes[0] : 'Kliknutím na tužku přidáte vlastní poznámku'} classNames='g1 colorCustomNote' />
-                }
+                CUSTOM NOTE WILL WE ADDED IN FUTURE RELEASES    */ }
             </div>
         </React.Fragment>
         }

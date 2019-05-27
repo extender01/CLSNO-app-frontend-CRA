@@ -31,8 +31,9 @@ export default class CredentialsForm extends React.Component {
 
     render() {
         return (
-            <div className='f_center'>
-                <form className='f_column credentials' onSubmit={this.onSubmit}>
+            <div className='credentials'>
+                <h2>Přihlášení</h2>
+                <form className='credentials__form' onSubmit={this.onSubmit}>
                     
                     <input type='text' name='nick' placeholder='Přihlašovací jméno' value={this.state.nick} onChange={this.onChange}/>
                     <input type='password' name='password' placeholder='Heslo' value={this.state.password} onChange={this.onChange} />

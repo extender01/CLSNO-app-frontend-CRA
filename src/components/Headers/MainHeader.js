@@ -59,7 +59,9 @@ class MainHeader extends React.Component {
                     </div>
         
                     <div className='header__user'>
-                        {this.props.isLogged ? (
+                        
+
+                        {this.props.isLogged && (
                             <React.Fragment>
                                 <div className='f_column'>
                                     <img src={IMG_user} height='20px' alt='logged user' />
@@ -67,11 +69,7 @@ class MainHeader extends React.Component {
                                 </div>
                                 <Link to='/login'>Odhlásit se</Link>
                             </React.Fragment>
-                        ) : (
-                            <div className='f_column g1'>
-                                <Link to='/login'>Přihlásit se</Link>
-                            </div>
-                        )}
+                        ) }
                     </div>
                 </div> 
             </div>
